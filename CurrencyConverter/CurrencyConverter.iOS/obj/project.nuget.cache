@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NGsRdPIhOUZOpiuSFUVAlL2i9vDFzIuYM5Opl3ZfB+EBvsv/BP3Y0nlODgkWXk1vHUdLEYCga8aU6qmyrjqWxw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Влад\\Documents\\GitHub\\3lab_FVA\\CurrencyConverter\\CurrencyConverter.iOS\\CurrencyConverter.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Влад\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Влад\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}

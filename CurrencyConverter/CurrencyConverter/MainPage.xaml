@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CurrencyConverter.MainPage">
+
+    <StackLayout BackgroundColor="LightGray">
+        <Frame BackgroundColor="#2196F3" Padding="25">
+            <Label 
+                Text="Конвертер валют" 
+                HorizontalTextAlignment="Center"
+                TextColor="White"
+                FontSize="36"/>
+        </Frame>
+
+        <Frame Margin="10,5" CornerRadius="25">
+            <StackLayout>
+                <Label 
+                    Text="Выберите дату:" 
+                    TextColor="Black" 
+                    FontSize="Subtitle"/>
+                <DatePicker 
+                    Date="{Binding Date}" 
+                    Format="dd/MM/yyyy" />
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5" CornerRadius="25">
+            <Label 
+                Text="{Binding Message}" 
+                HorizontalTextAlignment="Center" 
+                FontAttributes="Bold"/>
+        </Frame>
+
+        <Frame 
+            CornerRadius="25"  
+            HeightRequest="70" 
+            HorizontalOptions="Fill"
+            Margin="10,5">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Выберите валюту"  TextColor="Black" FontSize="Subtitle"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Picker 
+                        WidthRequest="200" 
+                        ItemsSource="{Binding CurrencyNames}" 
+                        ItemDisplayBinding="{Binding CharCode}"
+                        SelectedItem="{Binding SelectedCurrency1}" Title="Валюта"/>
+                    <Entry 
+                        WidthRequest="150" 
+                        Text="{Binding CurrencyResult1}" 
+                        Keyboard="Numeric"
+                        Placeholder="Значение"/>
+                </StackLayout>
+
+            </StackLayout>
+        </Frame>
+
+        <Frame 
+            CornerRadius="25"
+            HeightRequest="70" 
+            HorizontalOptions="Fill"
+            Margin="10,5">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Выберите валюту" TextColor="Black" FontSize="Subtitle"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Picker 
+                        WidthRequest="200" 
+                        ItemsSource="{Binding CurrencyNames}" 
+                        ItemDisplayBinding="{Binding CharCode}"
+                        SelectedItem="{Binding SelectedCurrency2}" 
+                        Title="Валюта"/>
+                    <Entry 
+                        WidthRequest="150" 
+                        Text="{Binding CurrencyResult2}" 
+                        Keyboard="Numeric" 
+                        Placeholder="Значение"/>
+                </StackLayout>
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
